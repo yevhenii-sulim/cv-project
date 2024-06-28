@@ -7,262 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link href="style.css" rel="stylesheet" />
     <title>summary</title>
-    <style>
-      html,
-      body,
-      div,
-      span,
-      applet,
-      object,
-      iframe,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      blockquote,
-      pre,
-      a,
-      abbr,
-      acronym,
-      address,
-      big,
-      cite,
-      code,
-      del,
-      dfn,
-      em,
-      img,
-      ins,
-      kbd,
-      q,
-      s,
-      samp,
-      small,
-      strike,
-      strong,
-      sub,
-      sup,
-      tt,
-      var,
-      b,
-      u,
-      i,
-      center,
-      dl,
-      dt,
-      dd,
-      ol,
-      ul,
-      li,
-      fieldset,
-      form,
-      label,
-      legend,
-      table,
-      caption,
-      tbody,
-      tfoot,
-      thead,
-      tr,
-      th,
-      td,
-      article,
-      aside,
-      canvas,
-      details,
-      embed,
-      figure,
-      figcaption,
-      footer,
-      header,
-      hgroup,
-      menu,
-      nav,
-      output,
-      ruby,
-      section,
-      summary,
-      time,
-      mark,
-      audio,
-      video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-      }
-
-      /* HTML5 display-role reset for older browsers */
-      article,
-      aside,
-      details,
-      figcaption,
-      figure,
-      footer,
-      header,
-      hgroup,
-      menu,
-      nav,
-      section {
-        display: block;
-      }
-
-      body {
-        line-height: 1;
-      }
-
-      ol,
-      ul {
-        list-style: none;
-      }
-
-      blockquote,
-      q {
-        quotes: none;
-      }
-
-      blockquote:before,
-      blockquote:after,
-      q:before,
-      q:after {
-        content: "";
-        content: none;
-      }
-
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-
-      body {
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-      }
-
-      h1 {
-        font-size: 29px;
-        line-height: 34px;
-        text-transform: uppercase;
-        color: #264061;
-        text-align: center;
-        margin: 0 0 22px 0;
-      }
-
-      h2 {
-        font-size: 23px;
-        color: #264061;
-        border-bottom: 1px solid #376193;
-        text-align: left;
-        line-height: 27px;
-        padding-top: 4px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 19px;
-        color: #000000;
-        padding-top: 15px;
-      }
-
-      .skills_scroll {
-        columns: 3;
-      }
-
-      li {
-        padding-top: 15px;
-      }
-
-      a {
-        text-decoration: none;
-        font-size: 16px;
-        line-height: 19px;
-        color: #000000;
-      }
-
-      .container {
-        display: grid;
-        width: 992px;
-        grid-template-columns: 1fr 1fr;
-        width: 992px;
-        margin: 0 auto;
-        border: 1px solid #d3d3d3;
-      }
-
-      .container_left_colum {
-        border-top: 40px solid #376193;
-        padding: 33px;
-        border-bottom: 40px solid transparent;
-      }
-
-      .container_right_colum {
-        border-top: 40px solid transparent;
-        border-bottom: 40px solid #264061;
-        padding: 33px;
-      }
-
-      .container_right_colum > div {
-        margin-bottom: 24px;
-      }
-
-      .container_left_colum > div + div {
-        margin-top: 24px;
-      }
-
-      svg {
-        transform: translateY(3px);
-      }
-
-      .mail {
-        transform: translateY(5px);
-      }
-
-      img {
-        width: 240px;
-        height: 240px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-
-      .photo {
-        text-align: center;
-      }
-
-      .about p {
-        text-indent: 20px;
-      }
-      .about a {
-        color: #ff0000;
-        font-weight: 800;
-      }
-      .contacts a {
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-      }
-      .name-project {
-        font-weight: 700;
-      }
-      .education-container section {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        padding-top: 15px;
-      }
-      .education-container h3 {
-        font-weight: 700;
-      }
-
-      .education-container p {
-        padding: 0;
-      }
-    </style>
   </head>
 
   <body>
@@ -407,12 +153,29 @@
                   </p>
                 </div>
               </div>
-              <div class="experience">
+              <div class="experience-box">
                 <h2>Experience</h2>
-                <p>
-                  <span class="name-project">ELEKS</span><br />
+                <div class="experience">
+                  <p class="name-project">ELEKS</p>
+                  <br />
                   February 2023 - May 2024 (already finish)
-                </p>
+                  <p>I am in charge of</p>
+                  <ul>
+                    <li>development of landing pages</li>
+                    <li>
+                      writing functions for the interactivity of the application
+                    </li>
+                    <li>
+                      working with requests and the server both through the
+                      react hook and through redux thunk
+                    </li>
+                    <li>
+                      participated in the discussion of the operation of the
+                      application
+                    </li>
+                    <li>fixed bugs</li>
+                  </ul>
+                </div>
               </div>
               <div class="experience">
                 <h2>Project experience</h2>
