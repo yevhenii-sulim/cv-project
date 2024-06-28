@@ -187,7 +187,9 @@
       }
 
       .container {
-        display: flex;
+        display: grid;
+        width: 992px;
+        grid-template-columns: 1fr 1fr;
         width: 992px;
         margin: 0 auto;
         border: 1px solid #d3d3d3;
@@ -195,13 +197,11 @@
 
       .container_left_colum {
         border-top: 40px solid #376193;
-        width: 348px;
         padding: 33px;
         border-bottom: 40px solid transparent;
       }
 
       .container_right_colum {
-        width: 664px;
         border-top: 40px solid transparent;
         border-bottom: 40px solid #264061;
         padding: 33px;
@@ -274,7 +274,7 @@
             <div class="container_left_colum">
               <div class="photo">
                 <h1>Evgeniy<br />Sulim</h1>
-                <img src="background-480.png" alt="photo" />
+                <img src="img.png" alt="photo" />
               </div>
               <div class="contacts">
                 <h2>Contacts</h2>
@@ -351,16 +351,47 @@
               </div>
               <div class="languages">
                 <h2>Languages</h2>
-                <p>Ukrainian (native)</p>
-                <p>Russian (native)</p>
-                <p>English (pre-intermediate)</p>
+                <ul>
+                  <li>Ukrainian (native)</li>
+                  <li>Russian (native)</li>
+                  <li>English (intermediate)</li>
+                </ul>
+              </div>
+              <div class="skills">
+                <h2>Tech skills</h2>
+                <ul class="skills_scroll">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>TS</li>
+                  <li>React.js</li>
+                  <li>Redux/toolkit, redux/thunk</li>
+                  <li>REST API</li>
+                  <li>OOP principles and patterns</li>
+                  <li>Material UI</li>
+                  <li>SASS</li>
+                  <li>Jira</li>
+                  <li>Git</li>
+                  <li>webpack</li>
+                  <li>parsel</li>
+                </ul>
+              </div>
+              <div class="skills">
+                <h2>Soft skills</h2>
+                <ul class="skills_scroll">
+                  <li>Accurate</li>
+                  <li>Hardworking</li>
+                  <li>Quick learning skills</li>
+                  <li>individually and in a team</li>
+                  <li>Teamwork</li>
+                  <li>Strong analytical thinking</li>
+                </ul>
               </div>
             </div>
             <div class="container_right_colum">
               <div class="summary">
                 <h2>Summary</h2>
                 <div class="about">
-                  <p>My name is Yevgeny, I am 32 years old.</p>
                   <p>
                     I have 1+ years of commercial experience in IT as a
                     front-end developer.
@@ -374,52 +405,13 @@
                     I'm always quick to learn new technology and write clean
                     code, always looking for optimization methods.
                   </p>
-                  <p>
-                    I am currently looking for a job where I can realize my
-                    potential, guaranteeing full dedication to work and constant
-                    improvement of my skills.
-                  </p>
-                  <p>
-                    I look forward to discussing how I can become a part of your
-                    team.
-                  </p>
-                </div>
-              </div>
-              <div class="skills">
-                <h2>Tech skills</h2>
-                <div class="skills_scroll">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>JavaScript</p>
-                  <p>TS</p>
-                  <p>React.js</p>
-                  <p>Redux/toolkit, redux/thunk</p>
-                  <p>REST API</p>
-                  <p>OOP principles and patterns</p>
-                  <p>Material UI</p>
-                  <p>SASS</p>
-                  <p>Jira</p>
-                  <p>Git</p>
-                  <p>webpack</p>
-                  <p>parsel</p>
-                </div>
-              </div>
-              <div class="skills">
-                <h2>Soft skills</h2>
-                <div class="skills_scroll">
-                  <p>Accurate</p>
-                  <p>Hardworking</p>
-                  <p>Quick learning skills</p>
-                  <p>individually and in a team</p>
-                  <p>Teamwork</p>
-                  <p>Strong analytical thinking</p>
                 </div>
               </div>
               <div class="experience">
                 <h2>Experience</h2>
                 <p>
                   <span class="name-project">ELEKS</span><br />
-                  February 2023 - May 2024
+                  February 2023 - May 2024 (already finish)
                 </p>
               </div>
               <div class="experience">
@@ -454,6 +446,7 @@
                   </p>
                   <p>2008 - 2013</p>
                 </section>
+                <h2>Courses</h2>
                 <section>
                   <h3>Ukrainian it-school</h3>
                   <p>Frontend developer</p>
