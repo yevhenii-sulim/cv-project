@@ -267,3 +267,7 @@ padding-left: 12px;
 .location{
     padding: 0;
 }
+.special{
+    font-size: 24px;
+    text-transform: lowercase;
+}
