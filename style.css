@@ -79,12 +79,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -99,175 +99,186 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+	display: block;
 }
 
 body {
-    line-height: 1;
+	line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+	content: "";
+	content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 400;
 }
 
 h1 {
-    font-size: 29px;
-    line-height: 34px;
-    text-transform: uppercase;
-    color: #264061;
-    text-align: center;
-    margin: 0 0 22px 0;
+	font-size: 29px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #264061;
+	text-align: center;
+	margin: 0 0 22px 0;
 }
 
 h2 {
-    font-size: 23px;
-    color: #264061;
-    border-bottom: 1px solid #376193;
-    text-align: left;
-    line-height: 27px;
-    padding-top: 4px;
+	font-size: 23px;
+	color: #264061;
+	border-bottom: 1px solid #376193;
+	text-align: left;
+	line-height: 27px;
+	padding-top: 4px;
 }
 
 p {
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    padding-top: 15px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+	padding-top: 15px;
 }
 
 .skills_scroll {
-    columns: 3;
+	columns: 3;
 }
 
 li {
-    padding-top: 15px;
+	padding-top: 15px;
 }
 
 a {
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
 }
-
+.visually_hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
 .container {
-    display: grid;
-    width: 992px;
-    grid-template-columns: 1fr 1fr;
-    width: 992px;
-    margin: 0 auto;
-    border: 1px solid #d3d3d3;
+	display: grid;
+	width: 992px;
+	grid-template-columns: 1fr 1fr;
+	width: 992px;
+	margin: 0 auto;
+	border: 1px solid #d3d3d3;
 }
 
 .container_left_colum {
-    border-top: 40px solid #376193;
-    padding: 33px;
-    border-bottom: 40px solid transparent;
+	border-top: 40px solid #376193;
+	padding: 33px;
+	border-bottom: 40px solid transparent;
 }
 
 .container_right_colum {
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid #264061;
-    padding: 33px;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid #264061;
+	padding: 33px;
 }
 
-.container_right_colum>div {
-    margin-bottom: 24px;
+.container_right_colum > div {
+	margin-bottom: 24px;
 }
 
-.container_left_colum>div+div {
-    margin-top: 24px;
+.container_left_colum > div + div {
+	margin-top: 24px;
 }
 
 svg {
-    transform: translateY(3px);
+	transform: translateY(3px);
 }
 
 .mail {
-    transform: translateY(5px);
+	transform: translateY(5px);
 }
 
 img {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 50%;
+	width: 240px;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 50%;
 }
 
 .photo {
-    text-align: center;
+	text-align: center;
 }
 
 .about p {
-    text-indent: 20px;
+	text-indent: 20px;
 }
 
 .about a {
-    color: #ff0000;
-    font-weight: 800;
+	color: #ff0000;
+	font-weight: 800;
 }
 
 .contacts a {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
 }
 
 .name-project {
-    font-weight: 700;
-padding: 0;
+	font-weight: 700;
+	padding: 0;
 }
 .education-container section {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-top: 15px;
 }
 
 .education-container h3 {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 .education-container p {
-    padding: 0;
+	padding: 0;
 }
 
 .experience {
-    padding-top: 15px;
+	padding-top: 15px;
 }
 
-.experience ul{
-padding-left: 12px;
+.experience ul {
+	padding-left: 12px;
 }
-.location{
-    padding: 0;
+.location {
+	padding: 0;
 }
-.special{
-    font-size: 24px;
-    text-transform: lowercase;
+.special {
+	font-size: 24px;
+	text-transform: lowercase;
 }
