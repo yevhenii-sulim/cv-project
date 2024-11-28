@@ -21,7 +21,7 @@
 				<div class="wraper">
 					<div class="container">
 						<div class="container_left_colum">
-							<div class="photo">
+							<div class="photo box">
 								<h1>
 									Evgeniy<br />Sulim <br />
 									<span class="special">Front-end Developer</span>
@@ -30,9 +30,9 @@
 									src="img.png"
 									alt="photo" />
 							</div>
-							<div class="contacts">
+							<div class="box">
 								<h2>Contacts</h2>
-								<ul>
+								<ul class="box-singl">
 									<li>
 										<a href="https://www.linkedin.com/in/sulim-yevhenii/">
 											<svg
@@ -102,17 +102,17 @@
 									</li>
 								</ul>
 							</div>
-							<div class="languages">
+							<div class="box">
 								<h2>Languages</h2>
-								<ul>
+								<ul class="box-singl">
 									<li>Ukrainian (native)</li>
 									<li>Russian (native)</li>
 									<li>English (pre-intermediate)</li>
 								</ul>
 							</div>
-							<div class="skills">
+							<div class="box">
 								<h2>Tech skills</h2>
-								<ul class="skills_scroll">
+								<ul class="box-scroll">
 									<li>HTML</li>
 									<li>CSS</li>
 									<li>JavaScript</li>
@@ -130,9 +130,9 @@
 									<li>parsel</li>
 								</ul>
 							</div>
-							<div class="skills">
+							<div class="box">
 								<h2>Soft skills</h2>
-								<ul class="skills_scroll">
+								<ul class="box-scroll">
 									<li>Accurate</li>
 									<li>Hardworking</li>
 									<li>Quick learning skills</li>
@@ -143,99 +143,125 @@
 							</div>
 						</div>
 						<div class="container_right_colum">
-							<div class="summary">
+							<div class="box">
 								<h2>Summary</h2>
-								<div class="about">
-									<p class="visually_hidden">
+								<ul class="box-singl">
+									<li class="visually_hidden">
 										I am learning Node.js (Express) and am ready to study
 										Shopify and WordPress under the guidance of a mentor and
 										courses.
-									</p>
-									<p>
+									</li>
+									<li>
 										I have 1+ years of commercial experience in IT as a
 										front-end developer.
-									</p>
-									<p>
+									</li>
+									<li>
 										My experience includes building responsive interfaces from
 										scratch, patching other developers code, and optimizing the
 										performance of web applications.
-									</p>
-									<p>
+									</li>
+									<li>
 										I'm always quick to learn new technology and write clean
 										code, always looking for optimization methods.
-									</p>
-								</div>
+									</li>
+								</ul>
 							</div>
-							<div class="experience-box">
+							<div class="box">
 								<h2>Experience</h2>
-								<div class="experience">
-									<p class="name-project">Enifsoft</p>
-									<br />
-									February 2023 - May 2024 (already finish)
-									<p>I am in charge of</p>
-									<ul>
-										<li>development of landing pages</li>
-										<li>
-											writing functions for the interactivity of the application
-										</li>
-										<li>
-											working with requests and the server both through the
-											react hook and through redux thunk
-										</li>
-										<li>fixing bugs</li>
-									</ul>
-								</div>
+								<ul class="box-singl">
+									<li>
+										<h3 class="name-project">Enifsoft</h3>
+										<p>I am in charge of</p>
+										<ul class="responsive">
+											<li>development of landing pages</li>
+											<li>
+												writing functions for the interactivity of the
+												application
+											</li>
+											<li>
+												working with requests and the server both through the
+												react hook and through redux thunk
+											</li>
+											<li>fixing bugs</li>
+										</ul>
+										February 2023 - May 2024 (already finish)
+									</li>
+								</ul>
 							</div>
-							<div class="experience">
+							<div class="box">
 								<h2>Project experience</h2>
-								<p>
-									<span class="name-project">MARKETPLACE</span>
-									(https://yevhenii-sulim.github.io/marketplace/) <br />
-									Application for purchase and sale of goods. Team project at
-									team challenge community [React.js, styled-components,
-									material UI, Redux]
-								</p>
-								<p>
-									<span class="name-project">Team challenge</span>
-									(https://teamchallenge.io/) <br />
-									An educational platform where you can assemble a team of
-									developers to create a project. [React.js, material UI,
-									tanstack/react-query, typescript]
-								</p>
-								<p>
-									<span class="name-project">WEBSTUDIO</span>
-									(https://yevhenii-sulim.github.io/portfolio/) <br />
-									A website with a responsive layout. [HTML, SASS]
-								</p>
-								<p>
-									<span class="name-project">FILMOTEKA</span>
-									(https://yevhenii-sulim.github.io/movies/) <br />
-									Application for finding of information about movies.
-									[React.js, CSS, REST]
-								</p>
+								<ul class="box-singl">
+									<li>
+										<h3 class="name-project">MARKETPLACE</h3>
+										<a
+											class="project-link"
+											href="https://yevhenii-sulim.github.io/marketplace/"
+											>https://yevhenii-sulim.github.io/marketplace/</a
+										>
+										Application for purchase and sale of goods. Team project at
+										team challenge community [React.js, styled-components,
+										material UI, Redux]
+									</li>
+									<li>
+										<h3 class="name-project">Team challenge</h3>
+										<a
+											class="project-link"
+											href="https://teamchallenge.io/"
+											>https://teamchallenge.io/</a
+										>
+										An educational platform where you can assemble a team of
+										developers to create a project. [React.js, material UI,
+										tanstack/react-query, typescript]
+									</li>
+									<li>
+										<h3 class="name-project">WEBSTUDIO</h3>
+										<a
+											class="project-link"
+											href="https://yevhenii-sulim.github.io/portfolio/"
+											>https://yevhenii-sulim.github.io/portfolio/</a
+										>
+										A website with a responsive layout. [HTML, SASS]
+									</li>
+									<li>
+										<h3 class="name-project">FILMOTEKA</h3>
+										<a
+											class="project-link"
+											href="https://yevhenii-sulim.github.io/movies/"
+											>https://yevhenii-sulim.github.io/movies/</a
+										>
+										Application for finding of information about movies.
+										[React.js, CSS, REST]
+									</li>
+								</ul>
 							</div>
-							<div class="education-container">
+							<div class="box">
 								<h2>Education</h2>
-								<section>
-									<h3>Master of engineering</h3>
-									<p>
-										Kharkiv National University of Construction and
-										Architecture, faculty of Sanitary Engineering, specialty -
-										heat and gas supply and ventilation 2013
-									</p>
-									<p>2008 - 2013</p>
-								</section>
+								<ul class="box-singl">
+									<li>
+										<h3 class="name-project">Master of engineering</h3>
+										<p>
+											Kharkiv National University of Construction and
+											Architecture, faculty of Sanitary Engineering, specialty -
+											heat and gas supply and ventilation 2013
+										</p>
+										<p>2008 - 2013</p>
+									</li>
+								</ul>
+							</div>
+							<div class="box">
 								<h2>Courses</h2>
-								<section>
-									<h3>IT School GoIT</h3>
-									<p>Frontend developer</p>
-									<p>December 2022 - May 2023</p>
-								</section>
-								<section>
-									<h3>Ukrainian it-school</h3>
-									<p>Frontend developer</p>
-									<p>January 2022 - March 2022</p>
-								</section>
+								<ul class="box-singl">
+									<li>
+										<h3 class="name-project">IT School GoIT</h3>
+										<p>Frontend developer</p>
+										<p>December 2022 - May 2023</p>
+									</li>
+									<li>
+										<h3 class="name-project">Ukrainian it-school</h3>
+										<p>Frontend developer</p>
+										<p>January 2022 - March 2022</p>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>

@@ -148,24 +148,15 @@ h2 {
 	font-size: 23px;
 	color: #264061;
 	border-bottom: 1px solid #376193;
-	text-align: left;
 	line-height: 27px;
-	padding-top: 4px;
+	margin-bottom: 12px;
 }
 
-p {
-	font-size: 16px;
-	line-height: 19px;
-	color: #000000;
-	padding-top: 15px;
-}
-
-.skills_scroll {
-	columns: 3;
-}
-
+p,
 li {
-	padding-top: 15px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #000000;
 }
 
 a {
@@ -195,24 +186,39 @@ a {
 	border: 1px solid #d3d3d3;
 }
 
+.box-scroll {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	li {
+		flex: 1 1 40%;
+	}
+}
+
 .container_left_colum {
 	border-top: 40px solid #376193;
-	padding: 33px;
 	border-bottom: 40px solid transparent;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .container_right_colum {
 	border-top: 40px solid transparent;
 	border-bottom: 40px solid #264061;
-	padding: 33px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
-.container_right_colum > div {
-	margin-bottom: 24px;
+.container_right_colum > .box:not(:last-child) {
+	margin-bottom: 12px;
 }
 
-.container_left_colum > div + div {
-	margin-top: 24px;
+.container_left_colum > .box {
+	margin-bottom: 12px;
 }
 
 svg {
@@ -234,51 +240,46 @@ img {
 	text-align: center;
 }
 
-.about p {
-	text-indent: 20px;
-}
-
-.about a {
-	color: #ff0000;
-	font-weight: 800;
-}
-
-.contacts a {
+.box-singl {
 	display: flex;
-	justify-content: flex-start;
-	gap: 10px;
+	flex-direction: column;
+	gap: 4px;
+}
+li {
+	line-height: 1.2;
+	padding-left: 8px;
 }
 
 .name-project {
 	font-weight: 700;
 	padding: 0;
-}
-.education-container section {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	padding-top: 15px;
+	margin-bottom: 4px;
 }
 
-.education-container h3 {
-	font-weight: 700;
-}
-
-.education-container p {
-	padding: 0;
-}
-
-.experience {
-	padding-top: 15px;
-}
-
-.experience ul {
-	padding-left: 12px;
-}
 .location {
 	padding: 0;
 }
 .special {
 	font-size: 24px;
 	text-transform: lowercase;
+}
+.responsive {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-bottom: 12px;
+	margin-top: 12px;
+	padding-left: 18px;
+	li {
+		list-style: inside;
+	}
+}
+.project-link {
+	display: block;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #000000;
+	font-style: italic;
+	margin-bottom: 4px;
+	padding-left: 18px;
 }
