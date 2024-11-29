@@ -244,6 +244,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
+	position: relative;
 }
 li {
 	line-height: 1.2;
