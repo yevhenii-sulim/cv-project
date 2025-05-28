@@ -102,6 +102,10 @@ section {
   display: block;
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   line-height: 1;
 }
@@ -136,7 +140,7 @@ body {
 }
 
 h1 {
-  font-size: 29px;
+  font-size: 1.8rem;
   line-height: 34px;
   text-transform: uppercase;
   color: #264061;
@@ -145,7 +149,7 @@ h1 {
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 1.4rem;
   color: #264061;
   border-bottom: 1px solid #376193;
   line-height: 27px;
@@ -154,17 +158,18 @@ h2 {
 
 p,
 li {
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: #000000;
 }
 
 a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 19px;
   color: #000000;
 }
+
 .visually_hidden {
   position: absolute;
   white-space: nowrap;
@@ -177,50 +182,85 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .container {
   display: grid;
   gap: 32px;
   width: 992px;
   grid-template-columns: 1fr 1fr;
-  width: 992px;
   margin: 0 auto;
   @media print {
-    height: 100vh;
+    align-content: start;
+    align-items: start;
+    height: auto !important;
   }
 }
+
+@media print {
+  .print-break {
+    page-break-before: always;
+    padding: 0;
+    justify-self: start;
+  }
+}
+
 .hidden {
-  font-size: 6px;
+  font-size: 1px;
   color: transparent;
   line-height: 1;
 }
+
+
 .box-scroll {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+
   li {
     flex: 1 1 40%;
   }
 }
 
 .container_left_column {
-  border-top: 40px solid #376193;
   border-bottom: 40px solid transparent;
   padding-left: 30px;
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+    @media print {
+    margin-bottom: auto;
+  }
 }
 
 .container_right_column {
   border-top: 40px solid transparent;
-  border-bottom: 40px solid #264061;
   padding-right: 30px;
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  @media print {
+    margin-bottom: auto;
+  }
 }
 
-.container_right_column > .box {
+.border {
+  background: #376193;
+  height: 40px;
+  width: 100%;
+}
+
+.bottom {
+  margin-top: 1.5rem;
+}
+
+.top {
+  margin-bottom: 1.5rem;
+}
+
+.container_right_column>.box {
   margin-bottom: 12px;
 }
 
-.container_left_column > .box {
+.container_left_column>.box {
   margin-bottom: 12px;
 }
 
@@ -249,6 +289,7 @@ img {
   gap: 4px;
   position: relative;
 }
+
 li {
   line-height: 1.2;
   padding-left: 8px;
@@ -263,14 +304,17 @@ li {
 .location {
   padding: 0;
 }
+
 .special {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: lowercase;
 }
+
 .special-box {
   display: flex;
   flex-direction: column;
 }
+
 .responsive {
   display: flex;
   flex-direction: column;
@@ -278,13 +322,15 @@ li {
   margin-bottom: 12px;
   margin-top: 12px;
   padding-left: 18px;
+
   li {
     list-style: inside;
   }
 }
+
 .project-link {
   display: block;
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: #000000;
   font-style: italic;
